@@ -1,0 +1,105 @@
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    animation: swapPositions 10s infinite alternate;
+}
+.circle_1 {
+    width: 80px;
+    background-color: brown;
+    height: 80px;
+}
+
+.circle_2 {
+    width: 130px;
+    background-color: red;
+    height: 130px;
+}
+
+.circle_3 {
+    width: 150px;
+    background-color: blue;
+    height: 150px;
+}
+
+.circle_4 {
+    width: 60px;
+    background-color: yellow;
+    height: 60px;
+}
+
+.circle_5 {
+    width: 120px;
+    background-color: green;
+    height: 120px;
+}
+
+.circle_6 {
+    width: 90px;
+    background-color: orange;
+    height: 90px;
+}
+
+.circle_7 {
+    width: 100px;
+    background-color: pink;
+    height: 100px;
+}
+.circle_8{
+    width: 80px;
+    background-color: orange;
+    height: 80px;
+}
+@keyframes swapPositions {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(calc(100px * var(--x)), calc(100px * var(--y))) rotate(360deg);
+    }
+}
+
+.circle_1 {
+    --x: 4.5;
+    --y: 2.2;
+}
+
+.circle_2 {
+    --x: -4.2;
+    --y: 2.1;
+}
+
+.circle_3 {
+    --x: 4;
+    --y: 2.1;
+}
+
+.circle_4 {
+    --x: -4.7;
+    --y: 2.1;
+}
+
+.circle_5 {
+    --x: 3.9;
+    --y: -2;
+}
+
+.circle_6 {
+    --x: -4.2;
+    --y: -2.1;
+}
+
+.circle_7 {
+    --x: 4.3;
+    --y: -2.1;
+}
+
+.circle_8 {
+    --x: -4.3;
+    --y: -1.9;
+}
+
+ 
